@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.4 on linux)" generated="20220912 17:02:05.493" rpa="false" schemaversion="3">
+<suite id="s1" name="Testfor" source="/home/dmd-pc-testeur/VSCode Projects/Robot Framework Variables/tests/testfor.robot">
+<test id="s1-t1" name="Premier exemple" line="5">
+<for flavor="IN">
+<var>${count}</var>
+<value>@{country}</value>
+<iter>
+<var name="${count}">France</var>
+<kw name="Log" library="BuiltIn">
+<arg>${count}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220912 17:02:05.511" level="INFO">France</msg>
+<status status="PASS" starttime="20220912 17:02:05.511" endtime="20220912 17:02:05.511"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Pause</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220912 17:02:05.512" level="INFO">Pause</msg>
+<status status="PASS" starttime="20220912 17:02:05.511" endtime="20220912 17:02:05.512"/>
+</kw>
+<status status="PASS" starttime="20220912 17:02:05.511" endtime="20220912 17:02:05.512"/>
+</iter>
+<iter>
+<var name="${count}">Japon</var>
+<kw name="Log" library="BuiltIn">
+<arg>${count}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220912 17:02:05.512" level="INFO">Japon</msg>
+<status status="PASS" starttime="20220912 17:02:05.512" endtime="20220912 17:02:05.512"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Pause</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220912 17:02:05.512" level="INFO">Pause</msg>
+<status status="PASS" starttime="20220912 17:02:05.512" endtime="20220912 17:02:05.512"/>
+</kw>
+<status status="PASS" starttime="20220912 17:02:05.512" endtime="20220912 17:02:05.512"/>
+</iter>
+<iter>
+<var name="${count}">Chine</var>
+<kw name="Log" library="BuiltIn">
+<arg>${count}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220912 17:02:05.512" level="INFO">Chine</msg>
+<status status="PASS" starttime="20220912 17:02:05.512" endtime="20220912 17:02:05.512"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Pause</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220912 17:02:05.513" level="INFO">Pause</msg>
+<status status="PASS" starttime="20220912 17:02:05.513" endtime="20220912 17:02:05.513"/>
+</kw>
+<status status="PASS" starttime="20220912 17:02:05.512" endtime="20220912 17:02:05.513"/>
+</iter>
+<iter>
+<var name="${count}">Bénin</var>
+<kw name="Log" library="BuiltIn">
+<arg>${count}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220912 17:02:05.513" level="INFO">Bénin</msg>
+<status status="PASS" starttime="20220912 17:02:05.513" endtime="20220912 17:02:05.513"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Pause</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220912 17:02:05.513" level="INFO">Pause</msg>
+<status status="PASS" starttime="20220912 17:02:05.513" endtime="20220912 17:02:05.513"/>
+</kw>
+<status status="PASS" starttime="20220912 17:02:05.513" endtime="20220912 17:02:05.513"/>
+</iter>
+<iter>
+<var name="${count}">Ghana</var>
+<kw name="Log" library="BuiltIn">
+<arg>${count}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220912 17:02:05.513" level="INFO">Ghana</msg>
+<status status="PASS" starttime="20220912 17:02:05.513" endtime="20220912 17:02:05.513"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Pause</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220912 17:02:05.514" level="INFO">Pause</msg>
+<status status="PASS" starttime="20220912 17:02:05.514" endtime="20220912 17:02:05.514"/>
+</kw>
+<status status="PASS" starttime="20220912 17:02:05.513" endtime="20220912 17:02:05.514"/>
+</iter>
+<status status="PASS" starttime="20220912 17:02:05.511" endtime="20220912 17:02:05.514"/>
+</for>
+<status status="PASS" starttime="20220912 17:02:05.510" endtime="20220912 17:02:05.514"/>
+</test>
+<test id="s1-t2" name="Deuxième exemple" line="12">
+<for flavor="IN RANGE">
+<var>${Index}</var>
+<value>1</value>
+<value>6</value>
+<iter>
+<var name="${Index}">1</var>
+<kw name="Log" library="BuiltIn">
+<arg>${Index}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220912 17:02:05.515" level="INFO">1</msg>
+<status status="PASS" starttime="20220912 17:02:05.515" endtime="20220912 17:02:05.515"/>
+</kw>
+<if>
+<branch type="IF" condition="${Index}== 4">
+<break>
+<status status="NOT RUN" starttime="20220912 17:02:05.515" endtime="20220912 17:02:05.515"/>
+</break>
+<status status="NOT RUN" starttime="20220912 17:02:05.515" endtime="20220912 17:02:05.515"/>
+</branch>
+<status status="PASS" starttime="20220912 17:02:05.515" endtime="20220912 17:02:05.515"/>
+</if>
+<status status="PASS" starttime="20220912 17:02:05.515" endtime="20220912 17:02:05.515"/>
+</iter>
+<iter>
+<var name="${Index}">2</var>
+<kw name="Log" library="BuiltIn">
+<arg>${Index}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220912 17:02:05.515" level="INFO">2</msg>
+<status status="PASS" starttime="20220912 17:02:05.515" endtime="20220912 17:02:05.515"/>
+</kw>
+<if>
+<branch type="IF" condition="${Index}== 4">
+<break>
+<status status="NOT RUN" starttime="20220912 17:02:05.515" endtime="20220912 17:02:05.515"/>
+</break>
+<status status="NOT RUN" starttime="20220912 17:02:05.515" endtime="20220912 17:02:05.515"/>
+</branch>
+<status status="PASS" starttime="20220912 17:02:05.515" endtime="20220912 17:02:05.515"/>
+</if>
+<status status="PASS" starttime="20220912 17:02:05.515" endtime="20220912 17:02:05.515"/>
+</iter>
+<iter>
+<var name="${Index}">3</var>
+<kw name="Log" library="BuiltIn">
+<arg>${Index}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220912 17:02:05.516" level="INFO">3</msg>
+<status status="PASS" starttime="20220912 17:02:05.516" endtime="20220912 17:02:05.516"/>
+</kw>
+<if>
+<branch type="IF" condition="${Index}== 4">
+<break>
+<status status="NOT RUN" starttime="20220912 17:02:05.516" endtime="20220912 17:02:05.516"/>
+</break>
+<status status="NOT RUN" starttime="20220912 17:02:05.516" endtime="20220912 17:02:05.516"/>
+</branch>
+<status status="PASS" starttime="20220912 17:02:05.516" endtime="20220912 17:02:05.516"/>
+</if>
+<status status="PASS" starttime="20220912 17:02:05.516" endtime="20220912 17:02:05.516"/>
+</iter>
+<iter>
+<var name="${Index}">4</var>
+<kw name="Log" library="BuiltIn">
+<arg>${Index}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220912 17:02:05.516" level="INFO">4</msg>
+<status status="PASS" starttime="20220912 17:02:05.516" endtime="20220912 17:02:05.516"/>
+</kw>
+<if>
+<branch type="IF" condition="${Index}== 4">
+<break>
+<status status="PASS" starttime="20220912 17:02:05.517" endtime="20220912 17:02:05.517"/>
+</break>
+<status status="PASS" starttime="20220912 17:02:05.517" endtime="20220912 17:02:05.517"/>
+</branch>
+<status status="PASS" starttime="20220912 17:02:05.516" endtime="20220912 17:02:05.517"/>
+</if>
+<status status="PASS" starttime="20220912 17:02:05.516" endtime="20220912 17:02:05.517"/>
+</iter>
+<status status="PASS" starttime="20220912 17:02:05.514" endtime="20220912 17:02:05.517"/>
+</for>
+<status status="PASS" starttime="20220912 17:02:05.514" endtime="20220912 17:02:05.517"/>
+</test>
+<status status="PASS" starttime="20220912 17:02:05.494" endtime="20220912 17:02:05.517"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Testfor">Testfor</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
